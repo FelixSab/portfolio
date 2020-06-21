@@ -1,6 +1,7 @@
 import { render } from 'preact-render-to-string';
 import { h } from 'preact';
 import * as fs from 'fs';
+import Favicon from '../src/media/favicon.ico';
 import App from '../src/js/components/App';
 
 const publicFiles = function getPublicFiles() {
@@ -17,7 +18,8 @@ const cssFilepath = function getCssFilepath() {
 const Boilerplate = ({ children }) => (
   <html>
     <head>
-      <title>Werbezeichen Frontend Template</title>
+      <title>Frontend Template</title>
+      <link href={Favicon} rel="shortcut icon" type="image/x-icon" />
       <link rel="stylesheet" type="text/css" href={cssFilepath} />
     </head>
     <body>

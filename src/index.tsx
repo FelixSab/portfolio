@@ -1,5 +1,6 @@
 import { h, render } from 'preact';
 import App from './js/components/App';
+import './media/favicon.ico';
 import './styles/global.sass';
 
 function hydrate(vnode: string | number | boolean | object | null | undefined, parent: Element) {
